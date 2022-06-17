@@ -1,28 +1,34 @@
 subs: find_primes
 tests: |-
   for my $case (@test_cases) {
-    is(
-      find_primes( $case->{input}{limit} ),
-      $case->{expected},
-      $case->{description},
-    );
+      is(
+          find_primes( $case->{input}{limit} ),
+          $case->{expected},
+          $case->{description},
+      );
   }
 
 example: |-
-  use lib 'lib';
-  use Exercism::QuickSolve;
-
   sub find_primes {
-    my ($limit) = @_;
+      my ($limit) = @_;
+      my %numbers = map {$_ => 1} 2..$limit;
+      my @primes;
 
-    quicksolve(
-      input     => $limit,
-      input_key => 'limit',
-    );
+      while (%numbers) {
+          push @primes, [sort {$a <=> $b} keys %numbers]->[0];
+
+          my $i = $primes[-1];
+          while ($i <= $limit) {
+              delete $numbers{$i};
+              $i += $primes[-1];
+          }
+      }
+
+      return [@primes];
   }
 
 stub: |-
   sub find_primes {
-    my ($limit) = @_;
-    return undef;
+      my ($limit) = @_;
+      return undef;
   }
