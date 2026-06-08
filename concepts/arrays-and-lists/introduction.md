@@ -41,7 +41,7 @@ While it is allowed, it is recommended to not have different variable types shar
 
 ## Arrays vs Lists
 
-Arrays and lists share many similarities, and in a lot of places can be used interchangably, but they are not the same thing.
+Arrays and lists share many similarities, and in a lot of places can be used interchangeably, but they are not the same thing.
 A list is a fixed and immutable collection of scalars.
 An array is a variable collection of scalars where the contents and the size of the array itself can be changed.
 
@@ -56,7 +56,7 @@ scalar @names; # 3
 scalar ('Alice', 'Bob', 'Charlie'); # 'Charlie' (and some warnings).
 ```
 
-Read more in the folowing FAQ: [What is the difference between a list and an array?](perlfaq4listarray)
+Read more in the following FAQ: [What is the difference between a list and an array?][perlfaq4listarray]
 
 [perlfaq4listarray]: https://perldoc.pl/perlfaq4#What-is-the-difference-between-a-list-and-an-array?
 [grep]: https://perldoc.pl/functions/grep

@@ -2,7 +2,7 @@ use experimental qw<class>;
 
 class Clock;
 
-field $hour :reader :param;
+field $hour   :reader :param;
 field $minute :reader :param;
 
 method time () {
