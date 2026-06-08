@@ -1,7 +1,5 @@
 package BookingUpForBeauty;
 
-use v5.40;
-
 # Suggested datetime modules you can use:
 #use Time::Piece;
 #use DateTime::Tiny;

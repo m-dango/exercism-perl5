@@ -1,8 +1,6 @@
 # Declare package 'Bob'
 package Bob;
 
-use v5.40;
-
 use Exporter qw<import>;
 our @EXPORT_OK = qw<hey>;
 
