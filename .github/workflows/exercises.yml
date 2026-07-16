@@ -33,8 +33,8 @@ jobs:
         run: prove exercises/practice/*/.meta/solutions/ --recurse --jobs 2
 
       - run: cpm install -g App::Yath
-        if: runner.os != 'Windows'
+        if: runner.os == 'Linux'
 
       - name: Test with yath
         run: yath test exercises/practice/*/.meta/solutions/ --jobs 2
-        if: runner.os != 'Windows'
+        if: runner.os == 'Linux'
