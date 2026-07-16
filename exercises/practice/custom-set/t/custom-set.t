@@ -179,6 +179,14 @@ is(
     "Sets with the same elements are equal: set is not equal to larger set with same elements",
 ); # end: 06059caf-9bf4-425e-aaff-88966cb3ea14
 
+$set1 = CustomSet->new( elements => [1] ); # begin: d4a1142f-09aa-4df9-8b83-4437dcf7ec24
+$set2 = CustomSet->new( elements => [ 1, 1 ] );
+is(
+    $set1->is_equal_to($set2),
+    T,
+    "Sets with the same elements are equal: set is equal to a set constructed from an array with duplicates",
+); # end: d4a1142f-09aa-4df9-8b83-4437dcf7ec24
+
 $set1 = CustomSet->new( elements => [] )->add(3); # begin: 8a677c3c-a658-4d39-bb88-5b5b1a9659f4
 is(
     $set1->is_equal_to( CustomSet->new( elements => [3] ) ),
@@ -271,6 +279,14 @@ is(
     T,
     "Difference (or Complement) of a set is a set of all elements that are only in the first set: difference of two non-empty sets is a set of elements that are only in the first set",
 ); # end: c5ac673e-d707-4db5-8d69-7082c3a5437e
+
+$set1 = CustomSet->new( elements => [ 1, 1 ] ); # begin: 20d0a38f-7bb7-4c4a-ac15-90c7392ecf2b
+$set2 = CustomSet->new( elements => [1] );
+is(
+    $set1->difference($set2)->is_equal_to( CustomSet->new( elements => [] ) ),
+    T,
+    "Difference (or Complement) of a set is a set of all elements that are only in the first set: difference removes all duplicates in the first set",
+); # end: 20d0a38f-7bb7-4c4a-ac15-90c7392ecf2b
 
 $set1 = CustomSet->new( elements => [] ); # begin: c45aed16-5494-455a-9033-5d4c93589dc6
 $set2 = CustomSet->new( elements => [] );
