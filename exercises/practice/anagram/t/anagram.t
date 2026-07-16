@@ -97,13 +97,13 @@ is( # begin: f367325c-78ec-411c-be76-e79047f4bd54
     "detects anagrams using case-insensitive possible matches",
 ); # end: f367325c-78ec-411c-be76-e79047f4bd54
 
-is( # begin: 7cc195ad-e3c7-44ee-9fd2-d3c344806a2c
-    match_anagrams( "go", ["go Go GO"] ),
+is( # begin: 630abb71-a94e-4715-8395-179ec1df9f91
+    match_anagrams( "go", ["goGoGO"] ),
     bag {
         end;
     },
     "does not detect an anagram if the original word is repeated",
-); # end: 7cc195ad-e3c7-44ee-9fd2-d3c344806a2c
+); # end: 630abb71-a94e-4715-8395-179ec1df9f91
 
 is( # begin: 9878a1c9-d6ea-4235-ae51-3ea2befd6842
     match_anagrams( "tapper", ["patter"] ),
@@ -145,5 +145,23 @@ is( # begin: 33d3f67e-fbb9-49d3-a90e-0beb00861da7
     },
     "words other than themselves can be anagrams",
 ); # end: 33d3f67e-fbb9-49d3-a90e-0beb00861da7
+
+is( # begin: a6854f66-eec1-4afd-a137-62ef2870c051
+    match_anagrams( "\x{391}\x{392}\x{393}", [ "\x{392}\x{393}\x{391}", "\x{392}\x{393}\x{394}", "\x{3B3}\x{3B2}\x{3B1}", "\x{3B1}\x{3B2}\x{3B3}" ] ),
+    bag {
+        item "\x{392}\x{393}\x{391}";
+        item "\x{3B3}\x{3B2}\x{3B1}";
+        end;
+    },
+    "handles case of greek letters",
+); # end: a6854f66-eec1-4afd-a137-62ef2870c051
+
+is( # begin: fd3509e5-e3ba-409d-ac3d-a9ac84d13296
+    match_anagrams( "a\x{2B02}", ["\x{20AC}a"] ),
+    bag {
+        end;
+    },
+    "different characters may have the same bytes",
+); # end: fd3509e5-e3ba-409d-ac3d-a9ac84d13296
 
 done_testing;
