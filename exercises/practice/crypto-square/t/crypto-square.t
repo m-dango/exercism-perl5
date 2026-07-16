@@ -48,10 +48,10 @@ is( # begin: a65d3fa1-9e09-43f9-bcec-7a672aec3eae
     "8 character plaintext results in 3 chunks, the last one with a trailing space"
 ); # end: a65d3fa1-9e09-43f9-bcec-7a672aec3eae
 
-is( # begin: fbcb0c6d-4c39-4a31-83f6-c473baa6af80
+is( # begin: 33fd914e-fa44-445b-8f38-ff8fbc9fe6e6
     cipher("If man was meant to stay on the ground, god would have given us roots."),
     "imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghn  sseoau ",
-    "54 character plaintext results in 7 chunks, the last two with trailing spaces"
-); # end: fbcb0c6d-4c39-4a31-83f6-c473baa6af80
+    "54 character plaintext results in 8 chunks, the last two with trailing spaces"
+); # end: 33fd914e-fa44-445b-8f38-ff8fbc9fe6e6
 
 done_testing;
