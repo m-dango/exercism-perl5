@@ -1,0 +1,17 @@
+[tools.perl]
+version = "latest"
+postinstall = "curl -fsSL https://raw.githubusercontent.com/skaji/cpm/main/cpm | perl - install -g"
+
+[hooks]
+postinstall = "bin/fetch-configlet"
+
+[tasks.generate-practice-exercise]
+usage = 'arg "<slug>"'
+run = '''
+bin/configlet sync --exercise ${usage_slug?} --update --docs --filepaths --metadata --tests
+bin/exercise-gen.pl ${usage_slug?}
+'''
+
+[tasks.test-practice-example]
+usage = 'arg "<slug>"'
+run = 'prove -rv exercises/practice/${usage_slug?}/.meta/solutions'
