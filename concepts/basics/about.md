@@ -68,7 +68,7 @@ Older versions of Perl would require retrieving the arguments from the special v
 
 Comments in Perl start with a `#` that is not part of a string, and finish at the end of the line.
 
-[perldata]: https://perldoc.pl/perldata
-[perlreftut]: https://perldoc.pl/perlreftut
-[perlsub]: https://perldoc.pl/perlsub
-[perlsubsig]: https://perldoc.pl/perlsub#Signatures
+[perldata]: https://perldoc.perl.org/perldata
+[perlreftut]: https://perldoc.perl.org/perlreftut
+[perlsub]: https://perldoc.perl.org/perlsub
+[perlsubsig]: https://perldoc.perl.org/perlsub#Signatures
