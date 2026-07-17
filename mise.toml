@@ -1,6 +1,12 @@
 [tools.perl]
 version = "latest"
-postinstall = "curl -fsSL https://raw.githubusercontent.com/skaji/cpm/main/cpm | perl - install -g"
+postinstall = '''
+curl -fsSL https://raw.githubusercontent.com/skaji/cpm/main/cpm | perl - install -g App::cpm Carton App::Yath
+cpm install -g
+'''
+
+[settings]
+experimental = true
 
 [hooks]
 postinstall = "bin/fetch-configlet"
