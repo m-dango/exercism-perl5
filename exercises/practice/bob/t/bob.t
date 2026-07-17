@@ -72,11 +72,23 @@ is( # begin: 05b304d6-f83b-46e7-81e0-4cd3ca647900
     "ending with whitespace",
 ); # end: 05b304d6-f83b-46e7-81e0-4cd3ca647900
 
+is( # begin: 2c7278ac-f955-4eb4-bf8f-e33eb4116a15
+    hey("\nDoes this cryogenic chamber make\n me look fat?"),
+    "Sure.",
+    "multiple line question",
+); # end: 2c7278ac-f955-4eb4-bf8f-e33eb4116a15
+
 is( # begin: d6c98afd-df35-4806-b55e-2c457c3ab748
     hey("FCECDFCAAB"),
     "Whoa, chill out!",
     "shouting gibberish",
 ); # end: d6c98afd-df35-4806-b55e-2c457c3ab748
+
+is( # begin: 3c954328-86fb-4c71-8961-e18d6a5e2517
+    hey("DO LIONS EAT PEOPLE? AHHHHH."),
+    "Whoa, chill out!",
+    "shouting a statement containing a question mark",
+); # end: 3c954328-86fb-4c71-8961-e18d6a5e2517
 
 is( # begin: a20e0c54-2224-4dde-8b10-bd2cdd4f61bc
     hey("1, 2, 3 GO!"),
@@ -137,12 +149,6 @@ is( # begin: aa8097cc-c548-4951-8856-14a404dd236a
     "Whatever.",
     "statement containing question mark",
 ); # end: aa8097cc-c548-4951-8856-14a404dd236a
-
-is( # begin: 66953780-165b-4e7e-8ce3-4bcb80b6385a
-    hey("\nDoes this cryogenic chamber make me look fat?\nNo."),
-    "Whatever.",
-    "multiple line question",
-); # end: 66953780-165b-4e7e-8ce3-4bcb80b6385a
 
 is( # begin: 5371ef75-d9ea-4103-bcfa-2da973ddec1b
     hey("         hmmmmmmm..."),
