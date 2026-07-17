@@ -30,4 +30,4 @@ If you want to dereference an entire array or hash, you can use the arrow operat
 You can also obtain slices of an array or hash reference by replacing the `*` with a subscript, e.g., `$ref->@[0..2]` or `$ref->@{'Foo', 'Bar'}`.
 For slices, sigil variance applies here in the same way it does with array and hash variables.
 
-[perlrefcurlybrackets]: https://perldoc.pl/perlref#Curly-Brackets
+[perlrefcurlybrackets]: https://perldoc.perl.org/perlref#Curly-Brackets

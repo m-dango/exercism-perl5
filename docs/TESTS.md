@@ -44,4 +44,4 @@ Documentation about the assertions used in the test files can be found in [Test2
 You can find a more in-depth explanation of `Test2` on [perldoc][test2].
 
 [test2-manual]: https://metacpan.org/pod/Test2::Manual::Testing::Introduction
-[test2]: https://perldoc.pl/Test2
+[test2]: https://perldoc.perl.org/Test2

@@ -3,7 +3,7 @@
 ## Modules
 
 Perl comes equipped with a set of core modules which you can find
-listed on [perldoc](https://perldoc.pl/modules). Typically you will be
+listed on [perldoc](https://perldoc.perl.org/modules). Typically you will be
 able to use any of these modules immediately. (Some distributions may
 require you to install core modules separately).
 

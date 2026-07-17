@@ -40,11 +40,11 @@ $names{'Bob', 'Charlie'}; #                            <- An error (disabled syn
 
 While it is allowed, it is recommended to not have different variable types share the same name for the sake of readability.
 
-[grep]: https://perldoc.pl/functions/grep
-[map]: https://perldoc.pl/functions/map
-[sort]: https://perldoc.pl/functions/sort
-[keys]: https://perldoc.pl/functions/keys
-[values]: https://perldoc.pl/functions/values
-[exists]: https://perldoc.pl/functions/exists
-[delete]: https://perldoc.pl/functions/delete
-[for]: https://perldoc.pl/perlsyn#Foreach-Loops
+[grep]: https://perldoc.perl.org/functions/grep
+[map]: https://perldoc.perl.org/functions/map
+[sort]: https://perldoc.perl.org/functions/sort
+[keys]: https://perldoc.perl.org/functions/keys
+[values]: https://perldoc.perl.org/functions/values
+[exists]: https://perldoc.perl.org/functions/exists
+[delete]: https://perldoc.perl.org/functions/delete
+[for]: https://perldoc.perl.org/perlsyn#Foreach-Loops

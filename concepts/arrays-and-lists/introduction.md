@@ -58,13 +58,13 @@ scalar ('Alice', 'Bob', 'Charlie'); # 'Charlie' (and some warnings).
 
 Read more in the following FAQ: [What is the difference between a list and an array?][perlfaq4listarray]
 
-[perlfaq4listarray]: https://perldoc.pl/perlfaq4#What-is-the-difference-between-a-list-and-an-array?
-[grep]: https://perldoc.pl/functions/grep
-[map]: https://perldoc.pl/functions/map
-[sort]: https://perldoc.pl/functions/sort
-[push]: https://perldoc.pl/functions/push
-[pop]: https://perldoc.pl/functions/pop
-[shift]: https://perldoc.pl/functions/shift
-[unshift]: https://perldoc.pl/functions/unshift
-[splice]: https://perldoc.pl/functions/splice
-[perlsynforeach]: https://perldoc.pl/perlsyn#Foreach-Loops
+[perlfaq4listarray]: https://perldoc.perl.org/perlfaq4#What-is-the-difference-between-a-list-and-an-array?
+[grep]: https://perldoc.perl.org/functions/grep
+[map]: https://perldoc.perl.org/functions/map
+[sort]: https://perldoc.perl.org/functions/sort
+[push]: https://perldoc.perl.org/functions/push
+[pop]: https://perldoc.perl.org/functions/pop
+[shift]: https://perldoc.perl.org/functions/shift
+[unshift]: https://perldoc.perl.org/functions/unshift
+[splice]: https://perldoc.perl.org/functions/splice
+[perlsynforeach]: https://perldoc.perl.org/perlsyn#Foreach-Loops

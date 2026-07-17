@@ -42,10 +42,10 @@ Some examples useful for exercises you may encounter here include [List::Util][L
 In additon to core modules, [CPAN][metacpan] has thousands of additional modules created by the Perl community available for installation.
 The Perl track uses a [cpanfile][test-runner-cpanfile] to install a selection of modules which can be used with Exercism's Perl test runner.
 
-[perl-core-modules]: https://perldoc.pl/modules
+[perl-core-modules]: https://perldoc.perl.org/modules
 [metacpan]: https://metacpan.org/
 [test-runner-cpanfile]: https://github.com/exercism/perl5-test-runner/blob/main/cpanfile
-[Exporter]: https://perldoc.pl/Exporter
-[List::Util]: https://perldoc.pl/List::Util
-[Time::Piece]: https://perldoc.pl/Time::Piece
-[Math::BigRat]: https://perldoc.pl/Math::BigRat
+[Exporter]: https://perldoc.perl.org/Exporter
+[List::Util]: https://perldoc.perl.org/List::Util
+[Time::Piece]: https://perldoc.perl.org/Time::Piece
+[Math::BigRat]: https://perldoc.perl.org/Math::BigRat

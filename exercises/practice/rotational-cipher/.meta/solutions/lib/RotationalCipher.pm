@@ -7,7 +7,7 @@ use experimental qw<signatures postderef postderef_qq>;
 use Exporter qw<import>;
 our @EXPORT_OK = qw<caesar_cipher>;
 
-# from https://perldoc.pl/perlop#tr/SEARCHLIST/REPLACEMENTLIST/cdsr
+# from https://perldoc.perl.org/perlop#tr/SEARCHLIST/REPLACEMENTLIST/cdsr
 # > Because the transliteration table is built at compile time, neither the
 # > SEARCHLIST nor the REPLACEMENTLIST are subjected to double quote
 # > interpolation. That means that if you want to use variables, you must

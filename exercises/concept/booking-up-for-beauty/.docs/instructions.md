@@ -41,5 +41,5 @@ describe_appointment("2019-07-25T13:45:00")
 
 Note the hour is in the range 0-12 and does not have a leading zero or space.
 
-[time-piece]: https://perldoc.pl/Time::Piece
+[time-piece]: https://perldoc.perl.org/Time::Piece
 [datetime-tiny]: https://metacpan.org/pod/DateTime::Tiny

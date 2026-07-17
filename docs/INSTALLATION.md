@@ -73,7 +73,7 @@ perl -I"$(exercism workspace)/perl5/lib/perl5"
 The environment changes from the above command will not persist, and will need to be rerun if you restart your shell.
 If you would like your environment to be set up automatically each time, modify your `.bashrc` (or \*nix equivalent) or your `PowerShell_profile.ps1` to include the above command.
 
-The documentation for local::lib can be found [here](https://perldoc.pl/local::lib).
+The documentation for local::lib can be found [here](https://perldoc.perl.org/local::lib).
 
 #### OS Packages
 Alternatively, the package manager for your OS may have a Test2 Suite package available for you to install.
