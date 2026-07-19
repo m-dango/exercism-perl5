@@ -17,3 +17,6 @@ run = '''
 bin/configlet sync --exercise ${usage_slug?} --update --docs --filepaths --metadata --tests
 bin/exercise-gen.pl ${usage_slug?}
 '''
+
+[tasks.test]
+run = 'prove -rv t exercises/practice/*/.meta'
