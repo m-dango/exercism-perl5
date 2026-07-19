@@ -19,4 +19,4 @@ bin/exercise-gen.pl ${usage_slug?}
 '''
 
 [tasks.test]
-run = 'prove -rv t exercises/practice/*/.meta'
+run = 'yath test t exercises/practice/*/.meta'
