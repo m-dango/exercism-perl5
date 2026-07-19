@@ -1,5 +1,5 @@
 [tools.perl]
-version = "latest"
+version = "5.42.2"
 postinstall = '''
 curl -fsSL https://raw.githubusercontent.com/skaji/cpm/main/cpm | perl - install -g App::cpm Carton App::Yath
 cpm install -g
